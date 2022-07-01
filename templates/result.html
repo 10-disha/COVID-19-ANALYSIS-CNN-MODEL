@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="Viewport" name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="Test for Covid-19">
+    <meta name="keywords" content="neural style, neural-style, artificial art, neural art, deep learning, filters, van gogh, painting from photos">
+    <title>COVID-19 | X-Ray Early Predictor</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+  <link rel="icon" type="fimage/png" href="../static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../static/vendor/animate/animate.css">
+<!--===============================================================================================-->  
+  <link rel="stylesheet" type="text/css" href="../static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../static/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->  
+  <link rel="stylesheet" type="text/css" href="../static/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../static/css/util.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+<!--===============================================================================================-->
+<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="../static/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../static/demo/demo.css" rel="stylesheet" />
+
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Raleway);
+      body{
+          text-align: center;
+      }
+
+
+      #header {
+        background-image: url('static/images/headbg.jpg');
+        width: 100%;
+        height: 400px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal;
+        font-size: 2em;
+      }
+      .lead{
+        font-size: 1.2em;
+      }
+      h1{
+          font-family: 'Raleway', sans-serif;
+          font-weight: normal;
+          font-size: 2.8em;
+      }
+      h2{
+          font-family: 'Raleway', sans-serif;
+          font-weight: normal;
+          font-size: 2em;
+      }
+      #style {
+        background-color: #f7f7f7;
+      }
+      .root{
+        background-color: #edeeef;
+      }
+      #footer{
+
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal;
+        }
+      .cc-selector input{
+          margin:0;padding:0;
+          -webkit-appearance:none;
+            -moz-appearance:none;
+                  appearance:none;
+        }
+        .udnie{background-image:url('static/images/udnie.jpg');
+        width:300px;height:400px;
+        border-radius: 5%;}
+        .mosaic{background-image:url('static/images/mosaic.jpg');
+        width:300px;height:400px;
+        border-radius: 5%;}
+        .candy{background-image:url('static/images/candy.jpg');
+        width:300px;height:400px;
+        border-radius: 5%;}
+        .rain_princess{background-image:url('static/images/rain_princess.jpg');
+        width:300px;height:400px;
+        border-radius: 5%;}
+        
+
+        .cc-selector input:active +.drinkcard-cc{opacity: .9;}
+        .cc-selector input:checked +.drinkcard-cc{
+            /* -webkit-filter: none;
+              -moz-filter: none;
+                    filter: none; */
+                    border: 9px solid deeppink;
+
+        }
+        .drinkcard-cc{
+            cursor:pointer;
+            background-size:cover;
+            background-repeat:no-repeat;
+            display:inline-block;
+            width:300px;
+            height:400px;
+            -webkit-transition: all 100ms ease-in;
+              -moz-transition: all 100ms ease-in;
+                    transition: all 100ms ease-in;
+            /* -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+              -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+                    filter: brightness(1.8) grayscale(1) opacity(.7); */
+        }
+        .drinkcard-cc:hover{
+            /* -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+              -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+                    filter: brightness(1.2) grayscale(.5) opacity(.9); */
+          border:5px solid red;
+        } 
+    </style>
+
+</head>
+<body>
+  
+  <nav class="root navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid row">
+      <div class="navbar-header col-md-1 col-sm-1">
+          <a class="navbar-brand" href="/#"><img src="static/images/log.jpg" id="logo" alt="styletransfer" width="80" height="80" style="border-radius: 50%;"></a>
+      </div>
+      <div class="navbar-header col-md-11 col-sm-11"><h2 style="font-size: 3.5em;"> Test for COVID 19 using Chest X-Rays! </h1></div>    
+    </div>
+  </nav>
+
+   <div class="content">
+        <div class="container-fluid" style="background-image: url(../static/images/bg.jpg); background-size: fill;">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-{{danger}}">
+                  <h4 class="card-title">Here's the result of testing from our AI!</h4>
+                </div>
+                <div class="card-body">
+                  <div id='style' class="container-fluid content">
+
+       <div id="output" class="container">
+        {% if out_pred and out_prob and processed_file %}
+                      
+        <ol class="list-unstyled row stylized">
+                    
+                    <li class="col-md-12 col-sm-6">
+                     <h3>X-Ray Scan</h3>
+                        <br>
+                       <img src="data:image/png;base64,{{processed_file}}">
+                       <h3>Prediction: {{out_pred}}</h3>
+                       <h3>Probability: {{out_prob}}%</h3>
+                    </li>
+                                      
+             </ol>
+          <br><br>
+        </div>  
+        <br><br>
+        <a class="btn btn-primary" href="data:image/png;base64,{{processed_file}}" download> Download </a> <input type="button" class="btn btn-secondary" onclick="window.location = '/';" value="Try Again!">
+        <br><br>
+        {% endif %}
+    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+     
+        
+       <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a>
+                  Suchet Aggarwal
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, made with <i class="material-icons">favorite</i> by
+            <a target="_blank">Suchet Aggarwal</a>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
