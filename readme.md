@@ -62,10 +62,6 @@ And Launch yuor Browser and go to : http://localhost:5000/
 
 Version : 1.0.0
 
-## Authors
-
-* **Suchet Aggarwal** - *IIIT-Delhi* - [Other Work](https://github.com/Suchet-Agg)
-
 ## Acknowledgments
 
 * [Data Set Used](https://github.com/ieee8023/covid-chestxray-dataset)
